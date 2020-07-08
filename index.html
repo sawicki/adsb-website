@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Active ADS-B Receivers" />
+  <title>ADS-B Active Receivers</title>
+  <!-- <link rel="stylesheet" href="/css/pure/pure-min.css" /> -->
+  <!-- <link rel="stylesheet" href="/css/debug.css" /> -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico?" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/b423faefaa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- <div id="layout"> -->
+  <div id="main">
+    <div class="header">
+      <h1>ADSB</h1>
+      <h2>Links to my ADS-B Receivers</h2>
+    </div>
+
+    <div class="content">
+
+
+
+
+
+     
+      <div>
+        <div class="toptext">
+          <h2>How to use this website</h2>
+          <p>
+            To see the planes being mapped by my three receivers, <strong>click on the receiver of interest below on the left</strong>.
+            Then <strong> click on the top link to the right</strong> to open a tab to that receivers output. For best results, adjust map
+            so you can see most of Florida.</p>          
+        </div>
+
+        <div class="tab" id="tabDIV">
+          <button class="tablinks" onclick="openADSB(event, 'ADSBE')" id="defaultOpen"><i class="fa fa-plane colorred"
+              aria-hidden="true"></i> &nbsp;&nbsp; ADS-B East </button>
+          <button class="tablinks" onclick="openADSB(event, 'ADSBW')"><i class="fa fa-plane colorblue"
+              aria-hidden="true"></i>&nbsp;&nbsp; ADS-B West </button>
+          <button class="tablinks" onclick="openADSB(event, 'adsbex')"><i class="fa fa-plane colorblue"
+              aria-hidden="true"></i>
+            &nbsp;&nbsp;ADSBExchange</button>
+        </div>
+
+        <div id="ADSBE" class="tabcontent">
+          <h3><i class="fa fa-plane colorred" aria-hidden="true"></i> <a href="http://adsbe.sawicki.org"
+              target="_blank"> ADS-B East</a></h3>
+          Receiver on second floor near east facing window.
+          <br>
+
+          <ul>
+
+            <li> Receiver: <a href="https://flightaware.com/adsb/prostick/" target="_blank"> Flightaware Pro</a></li>
+            <li> Software: <a href="https://flightaware.com/adsb/piaware/install" target="_blank">PIAware Rasbian
+                Image</a></li>
+            <li>Computer: Raspberry PI 3B </li>
+            <li>Antenna: <a
+                href="https://smile.amazon.com/gp/product/B013S8B234/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1"
+                target="_blank">1090MH Indoor Vertical</a></li>
+            <li>Frequency: 1090 MH (ADS-B ES)</li>
+            <li>Feeds: <a href="https://flightaware.com/" class="tooltip">FlightAware  <i class="fa fa-info-circle" aria-hidden="true"></i><span class="tooltiptext">Link to FlightAware aggregator I feed into.  Here you will see the results of all the feeders.</span></a></li>
+            <li>Installed: 2/8/20</li>
+          </ul>
+
+        </div>
+
+        <div id="ADSBW" class="tabcontent">
+          <h3><i class="fa fa-plane colorred" aria-hidden="true"></i> <a href="http://adsbw.sawicki.org"
+              target="_blank">ADS-B West</a></h3>
+          Receiver on second floor near west facing window.
+          <ul>
+            <li> Receiver: <a href="https://flightaware.com/adsb/prostick/" target="_blank"> Flightaware Pro</a></li>
+            <li> Software: <a href="https://flightaware.com/adsb/piaware/install" target="_blank">PIAware
+                Rasbian Image</a></li>
+            <li>Computer: Raspberry PI 3B </li>
+            <li>Antenna: <a
+                href="https://smile.amazon.com/gp/product/B013S8B234/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1"
+                target="_blank">1090MH Indoor Vertical</a></li>
+            <li>Frequency: 1090 MH (ADS-B ES)</li>
+            <li>Feeds: <a href="https://flightaware.com/" class="tooltip">FlightAware <i class="fa fa-info-circle" aria-hidden="true"></i><span class="tooltiptext">Link to FlightAware aggregator I feed into.  Here you will see the results of all the feeders.</span> </a></li>
+            <li>Installed: 2/12/20</li>
+          </ul>
+        </div>
+
+        <div id="adsbex" class="tabcontent">
+          <h3> <i class="fa fa-plane colorred" aria-hidden="true"></i> <a href="http://45.3.237.26:8082/tar1090/"
+              target="_blank">ADSBExchange</a></h3>
+          Receiver on second floor near east facing window. Uses adsbexchange which does not filter out military
+          aircraft.
+          <ul>
+            <li> Receiver: <a href="https://flightaware.com/adsb/prostick/" target="_blank"> RTL-SDR Dongle</a></li>
+            <li> Software: <a href="https://flightaware.com/adsb/piaware/install" target="_blank">adsbexchange Rasbian
+                Image</a></li>
+            <li>Computer: Raspberry PI 4 (4GB) </li>
+            <li>Antenna: <a
+                href="https://www.amazon.com/RTL-SDR-Blog-Multipurpose-Dipole-Antenna/dp/B075445JDF/ref=pd_bxgy_2/141-5652203-7626151?_encoding=UTF8&pd_rd_i=B075445JDF&pd_rd_r=4fa40fc7-609d-44ef-96d1-f56e3aaeea6c&pd_rd_w=nt2Nl&pd_rd_wg=hE1d4&pf_rd_p=4e3f7fc3-00c8-46a6-a4db-8457e6319578&pf_rd_r=B9QY9HRX6KG7Z7GMYJDP&psc=1&refRID=B9QY9HRX6KG7Z7GMYJDP"
+                target="_blank">RTL-SDR Dipole</a>
+            </li>
+            <li>Frequency: 1090 MH (ADS-B ES)</li>
+            <li>Feeds: <a href="https://tar1090.adsbexchange.com/" target="_blank" class="tooltip">adsbexchange <i class="fa fa-info-circle" aria-hidden="true"></i><span class="tooltiptext">Link to adbsexchange aggregator I feed into.  Here you will see the results of all the feeders.</span></a> </li>
+            <li>Installed: 6/3/20</li>
+
+          </ul>
+        </div>
+      </div>
+      <p class=clearfix></p>
+
+      
+      </p>
+      <div class = "flex-container">
+        <div> <a href="https://en.wikipedia.org/wiki/Automatic_dependent_surveillance_%E2%80%93_broadcast#Universal_Access_Transceiver_(UAT)" target="_blank" class="tooltip">ADS-B Info <i class="fa fa-info-circle" aria-hidden="true"> </i> <span class="tooltiptext ">Wikipedia article on ADS-B</span></a>
+        </div>
+        <div>
+          <a href="https://flightaware.com/adsb/stats/user/sawicki" target="_blank" class="tooltip">Personal FlightAware
+            Stat Page <i class="fa fa-info-circle" aria-hidden="true"> </i> <span class="tooltiptext ">Takes you to my personal stats page where you can see number of planes, coverage, etc.</span></a>
+        </div>
+        <!-- Closes Content -->
+      </div>
+      
+
+      <script>
+
+      </script>
+
+    </div>
+  </div>
+  <!-- </div> -->
+  <script src="js/verticaltabs.js"></script>
+</body>
+
+</html>
