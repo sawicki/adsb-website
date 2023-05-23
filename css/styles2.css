@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+* {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+body {
+  color: #444;
+  background-color: #797979;
+  font-family: Arial, sans-serif;
+}
+
+#main {
+  background-color: #ececfc;
+  /* background-color:#f9f9f9 ; */
+  max-width: 1024px;
+  margin: auto;
+  border-radius: 25px;
+  /* padding-bottom: 50px; */
+}
+
+p {
+  padding: 10px;
+}
+
+.toptext {
+  padding: 15px 30px 5px;
+}
+
+h3 {
+  font-family: 'Audiowide', cursive;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+ul {
+  margin: 0px;
+}
+
+/*
+The content `<div>` is where all your content goes.
+*/
+.content {
+  margin: auto;
+
+  /* max-width: 400px; */
+  margin-bottom: 50px;
+  line-height: 1.6em;
+  /* padding: 50px; */
+  /* background-color: #fff; */
+}
+
+.header {
+  color: #333;
+  text-align: center;
+  /* padding: 2.5em 2em 0; */
+  border-bottom: 5px solid #797979;
+  /* background-color: #38ACEC; */
+}
+h1 {
+  color: #e91e63;
+  font-family: 'Audiowide', cursive;
+  font-size: 3em;
+  padding-top: 20px;
+  font-weight: bold;
+  margin: 0px;
+
+  text-shadow: 1px 1px 1px #fefefe;
+}
+h2 {
+  font-family: 'Audiowide', cursive;
+  font-weight: 300;
+  color: #555;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.content-subhead {
+  margin: 50px 0 20px 0;
+  font-weight: 300;
+  color: #555;
+}
+
+/*  ================================================================  */
+
+
+
+s
+a{
+  transition: color .5s, font-size .5s;
+}
+a:hover {
+  color: red;
+  background-color: yellow;
+  font-size: 110%;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+button.active > i {
+  color: red;
+}
+
+button:hover > i {
+  color: red;
+}
+
+.colorred {
+  color: red;
+}
+
+.colorblue {
+  color: blue;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.footerright {
+  /* text-align: right; */
+  margin-right: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Tooltip CSS Starts Here */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 210px;
+  background-color: navy;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
