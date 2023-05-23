@@ -22,36 +22,31 @@
     </div>
 
     <div class="content">
-      <div>
+      
         <div class="toptext">
           <h2>How to use this website</h2>
           <p>
-            To see the planes being mapped by my three receivers, <strong>click on the receiver of interest below on the
-              left</strong>.
-            Then <strong> click on the top link to the right</strong> to open a tab to that receivers output. For best
+            There are currently three ADSB receivers in my house.  To see the live maps displaying panes in central Florida  <strong>click on the receiver of interest below.  
+             </strong>.
+            You can click on the twistees to see the equipment used for each receiver.  For best
             results, adjust map
             so you can see most of Florida.</p>
         </div>
+      
+        
 
-        <div class="tab" id="tabDIV">
-          <button class="tablinks" onclick="openADSB(event, 'ADSBE')" id="defaultOpen"><i class="fa fa-plane colorred"
-              aria-hidden="true"></i> &nbsp;&nbsp; ADS-B East </button>
-          <button class="tablinks" onclick="openADSB(event, 'ADSBW')"><i class="fa fa-plane colorblue"
-              aria-hidden="true"></i>&nbsp;&nbsp; ADS-B West </button>
-          <button class="tablinks" onclick="openADSB(event, 'adsbex')"><i class="fa fa-plane colorblue"
-              aria-hidden="true"></i>
-            &nbsp;&nbsp;ADSBExchange</button>
-        </div>
-
-        <div id="ADSBE" class="tabcontent">
-          <h3>
+        
+          <details>
+            <summary>
+          <strong>
             <i class="fa fa-plane colorred" aria-hidden="true"></i>
-            <a href="http://adsbe.sawicki.org" target="_blank" class="tooltip">
-              ADS-B East
+            <a href="http://45.3.237.26/skyaware/" target="_blank" class="tooltip">
+              ADS-B East - Receiver in east facing window feeding Flightaware
               <i class="fa fa-info-circle" aria-hidden="true"></i>
               <span class="tooltiptext">Takes you to the output map for this receiver</span>
             </a>
-          </h3>
+          </strong>
+          </summary>
           Receiver on second floor near east facing window.
           <br>
           <ul>
@@ -68,17 +63,24 @@
                   will see the results of all the feeders.</span></a></li>
             <li>Installed: 2/8/20</li>
           </ul>
+</details>  
+        
 
-        </div>
-
-        <div id="ADSBW" class="tabcontent">
-          <h3><i class="fa fa-plane colorred" aria-hidden="true"></i>
-            <a href="http://adsbw.sawicki.org" target="_blank" class="tooltip">
-              ADS-B West
+        
+          <details>
+            <summary>
+              <strong>
+          <i class="fa fa-plane colorred" aria-hidden="true"></i>
+            
+            <a href="http://45.3.237.26:3334/skyaware/" target="_blank" class="tooltip">
+              ADS-B West - Receiver in west facing window feeding Flightaware
               <i class="fa fa-info-circle" aria-hidden="true"></i>
               <span class="tooltiptext">Takes you to the output map for this receiver</span>
             </a>
-          </h3>
+            </strong>
+            </summary>
+          
+         
           Receiver on second floor near west facing window.
           <ul>
             <li> Receiver: <a href="https://flightaware.com/adsb/prostick/" target="_blank"> Flightaware Pro</a></li>
@@ -94,16 +96,21 @@
                   will see the results of all the feeders.</span> </a></li>
             <li>Installed: 2/12/20</li>
           </ul>
-        </div>
+          </details>
+        
 
-        <div id="adsbex" class="tabcontent">
-          <h3> <i class="fa fa-plane colorred" aria-hidden="true"></i>
-            <a href="http://45.3.237.26:8082/tar1090/" target="_blank" class="tooltip">
-              ADSBExchange
+        
+          <details>
+            <summary>
+              <strong>
+           <i class="fa fa-plane colorred" aria-hidden="true"></i>
+            <a href="http://45.3.237.26:3333/tar1090/" target="_blank" class="tooltip">
+              ADSBExchange - Receiver in east facing window feeding adsbexchange
               <i class="fa fa-info-circle" aria-hidden="true"></i>
               <span class="tooltiptext">Takes you to the output map for this receiver</span>
             </a>
-          </h3>
+          </strong>
+            </summary>
 
           Receiver on second floor near east facing window. Uses adsbexchange which does not filter out military
           aircraft.
@@ -123,7 +130,8 @@
             <li>Installed: 6/3/20</li>
 
           </ul>
-        </div>
+          </details>
+        
       </div>
       <p class=clearfix></p>
 
@@ -151,7 +159,7 @@
     </div>
   </div>
   <!-- </div> -->
-  <script src="js/verticaltabs.js"></script>
+ 
 </body>
 
 </html>
